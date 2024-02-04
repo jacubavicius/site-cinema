@@ -23,10 +23,13 @@
         <a href="bomboniere.html">Bomboniere</a> |
         <!-- Falta colocar <form> aqui  -->
         <label for="cinemas">Cinemas:</label>
-        <select name="cinemas" id="cinemas">
-          <option value="santo-andre">Santo André</option>
-          <option value="sao-bernardo">São Bernardo</option>
-          <option value="sao-caetano">São Caetano</option>
+        <select name="cinemas" id="cinemas" onchange="location.href=this.value">
+          <option value="" data-default disabled selected>Unidades</option>
+          <option value="/pagina-unidades/santo-andre.html">Santo André</option>
+          <option value="/pagina-unidades/sao-bernardo.html">
+            São Bernardo
+          </option>
+          <option value="/pagina-unidades/sao-caetano.html">São Caetano</option>
         </select>
       </nav>
     </header>
