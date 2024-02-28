@@ -1,0 +1,137 @@
+:root {
+  --cor-principal: #092e96;
+  --cor-secundaria: #031d44;
+  --cor-terciaria: #ffcc36;
+  --cor-escura: #818a96;
+  --cor-media: #dfe1e8;
+  --cor-clara: #fafafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto";
+}
+
+header {
+  display: block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+div.header__div-logo {
+  background-color: var(--cor-principal);
+  height: 5rem;
+  text-align: center;
+}
+
+img.header__img-logo {
+  height: 64px;
+  width: 288px;
+  padding: 0.4rem;
+}
+
+nav {
+  background-color: var(--cor-secundaria);
+  list-style-type: none;
+  text-align: center;
+  height: 3.3rem;
+  width: 60%;
+  margin: auto;
+  border-bottom-right-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+  position: sticky;
+  top: 5rem;
+}
+
+.nav__ul li {
+  display: inline-block;
+  font-family: "Roboto";
+  font-weight: 900;
+  color: var(--cor-terciaria);
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  position: relative;
+  top: 0.8rem;
+}
+
+li + li {
+  padding-left: 4rem;
+}
+
+.nav__ul a {
+  color: var(--cor-clara);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav__ul a:hover {
+  color: var(--cor-terciaria);
+}
+
+.nav__ul a:active {
+  color: #ffcd6e;
+}
+
+li.nav__li-dropdown {
+  display: inline-block;
+}
+
+.nav__dropdown-conteudo {
+  display: none;
+  position: absolute;
+  top: 2.5rem;
+  background-color: var(--cor-secundaria);
+  border-bottom-right-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+  min-width: 9.6rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.nav__dropdown-conteudo a {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  display: block;
+  text-align: left;
+}
+
+.nav__dropdown-conteudo a:hover {
+  background-color: rgb(3, 29, 78);
+}
+
+.nav__li-dropdown:hover .nav__dropdown-conteudo {
+  display: block;
+}
+
+footer {
+  display: inline-block;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--cor-principal);
+  padding: 0.5rem 0 0.5rem 0;
+  text-align: center;
+}
+
+.footer__a {
+  text-decoration: none;
+  font-weight: 900;
+  color: var(--cor-clara);
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  padding-right: 2.5rem;
+  text-transform: uppercase;
+}
+
+.footer__a:hover {
+  color: var(--cor-terciaria);
+}
+
+.footer__p {
+  font-size: 0.8rem;
+  padding-top: 1rem;
+  color: var(--cor-terciaria);
+}
