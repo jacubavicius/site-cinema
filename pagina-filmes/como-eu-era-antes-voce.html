@@ -4,35 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Como Eu Era Antes de Você | Cinemag</title>
-    <link rel="icon" type="image/x-icon" href="/imagens/icon-favicon.png" />
-  </head>
 
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="/css/style-padrao.css" />
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
   <body>
     <header>
-      <nav>
-        <a href="/index.html">
-          <img
-            src="/imagens/logo.png"
-            alt="Logo do cinema"
-            height="61"
-            width="215"
-          />
-        </a>
-        <a href="/em-cartaz.html">Em cartaz</a> |
-        <a href="/ingressos.html">Ingressos</a> |
-        <a href="/bomboniere.html">Bomboniere</a> |
-        <!-- Falta colocar <form> aqui  -->
-        <label for="cinemas">Cinemas:</label>
-        <select name="cinemas" id="cinemas" onchange="location.href=this.value">
-          <option value="" data-default disabled selected>Unidades</option>
-          <option value="/pagina-unidades/santo-andre.html">Santo André</option>
-          <option value="/pagina-unidades/sao-bernardo.html">
-            São Bernardo
-          </option>
-          <option value="/pagina-unidades/sao-caetano.html">São Caetano</option>
-        </select>
-      </nav>
+      <div class="header__div-logo">
+        <a href="/index.html"
+          ><img
+            class="header__img-logo"
+            src="/imagens/PRODUCTION__2_-removebg-preview.png"
+            alt="Logo"
+        /></a>
+      </div>
     </header>
+
+    <nav>
+      <ul class="nav__ul">
+        <li><a href="/em-cartaz.html">Em Cartaz</a></li>
+        <li><a href="/ingressos.html">Ingressos</a></li>
+        <li><a href="/bomboniere.html">Bomboniere</a></li>
+        <li class="nav__li-dropdown">
+          <a class="nav__dropdown-botao" href="javascript:void(0)">Unidades</a>
+          <div class="nav__dropdown-conteudo">
+            <a href="pagina-unidades/santo-andre.html">Santo André</a>
+            <a href="pagina-unidades/sao-bernardo.html">São Bernardo</a>
+            <a href="pagina-unidades/sao-caetano.html">São Caetano</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
 
     <hr />
 
@@ -88,8 +98,8 @@
   <hr />
 
   <footer>
-    <a href="duvidas-frequentes.html">Dúvidas Frequentes</a> |
-    <a href="contato.html">Contato</a>
-    <p>&copy; 2024 Cinema Production</p>
+    <a class="footer__a" href="/duvidas-frequentes.html">Dúvidas Frequentes</a>
+    <a class="footer__a" href="/contato.html">Contato</a>
+    <p class="footer__p">&copy; 2024 Cinema Production</p>
   </footer>
 </html>
